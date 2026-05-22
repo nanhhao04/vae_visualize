@@ -22,7 +22,7 @@ from scipy.optimize import linear_sum_assignment
 # ---------------------------------------------------------------------------
 with open("config.yml", "r", encoding="utf-8") as f:
     config = yaml.safe_load(f)
-data_name = config.get("data_name", "cifar10")
+data_name = config.get("data_name")
 print(f"Inference using dataset: {data_name}")
 
 assert os.path.exists("X_loaded.npy"), "X_loaded.npy not found. Run training.py first."
@@ -40,7 +40,7 @@ print('X shape:', X.shape, '| y shape:', y.shape)
 # ---------------------------------------------------------------------------
 # Parameters
 # ---------------------------------------------------------------------------
-LATENT_DIMS      = [16, 32, 64]
+LATENT_DIMS      = [32]
 BATCH_SIZE       = 128
 SAMPLES_PER_DIST = 1000
 

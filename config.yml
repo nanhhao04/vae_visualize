@@ -1,1 +1,1 @@
-data_name: cifar10  # hoặc cifar10 hoặc agnew hoặc speechcommand
+data_name: speechcommand # hoặc cifar10 hoặc agnew hoặc speechcommand

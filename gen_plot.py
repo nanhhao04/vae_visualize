@@ -39,9 +39,9 @@ CLUSTER_COLORS = ["red", "green", "gold"]
 # Chỉ dùng 3 shape
 SHAPE_LIST = ["o", "s", "^"]
 SHAPE_NAMES = {
-    "o": "Cluster 0",
-    "s": "Cluster 1",
-    "^": "Cluster 2",
+    "o": "type A",
+    "s": "type B",
+    "^": "type C",
 }
 
 def get_marker_3(label):
@@ -126,5 +126,5 @@ def plot_single_pdf(LATENT_DIM):
     plt.close()
     print(f"Saved PDF → {out_path}")
 
-for latent_dim in [16, 32, 64]:
+for latent_dim in [32]:
     plot_single_pdf(latent_dim)
